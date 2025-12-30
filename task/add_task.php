@@ -9,5 +9,5 @@ $date  = $_POST['date'];
 mysqli_query($conn,
     "INSERT INTO todos VALUES (NULL, '{$_SESSION['user_id']}', '$title', '$desc', '$date', 'pending')"
 );
-
+header("Location: ../dashboard.php");
 header("Location: ../dashboard.php");

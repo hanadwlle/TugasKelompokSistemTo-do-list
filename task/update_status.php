@@ -22,4 +22,6 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("ssssii", $title, $description, $due_date, $status, $id, $user_id);
 $stmt->execute();
 
-header("Location: ../dashboard.php");
+
+
+

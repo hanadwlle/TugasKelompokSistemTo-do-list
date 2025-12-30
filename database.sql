@@ -1,3 +1,4 @@
+
 -- =========================
 -- DATABASE TODO LIST
 -- =========================
@@ -8,6 +9,11 @@ USE todo_db;
 -- =========================
 -- TABLE USERS
 -- =========================
+=======
+CREATE DATABASE IF NOT EXISTS todo_db;
+USE todo_db;
+
+>>>>>>> 77716962992534d478a552dbf66382adb0eabc6b
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -19,6 +25,8 @@ CREATE TABLE users (
 -- =========================
 -- TABLE TASKS
 -- =========================
+
+
 CREATE TABLE tasks (
     id INT AUTO_INCREMENT PRIMARY KEY,
     user_id INT NOT NULL,
@@ -27,6 +35,8 @@ CREATE TABLE tasks (
     due_date DATE,
     status ENUM('pending','done') DEFAULT 'pending',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+
 
     CONSTRAINT fk_user
         FOREIGN KEY (user_id)

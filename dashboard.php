@@ -25,4 +25,7 @@ $data = mysqli_query($conn,
 <?php endwhile ?>
 </ul>
 
+
 <a href="auth/logout.php">Logout</a>
+<a href="auth/logout.php">Logout</a>
+
