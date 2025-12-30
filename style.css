@@ -1,0 +1,128 @@
+/* perubahan baru */
+
+/* ===============================
+   RESET & DASAR
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===============================
+   BODY
+================================ */
+body {
+    background-color: #f2f4f7;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* ===============================
+   CONTAINER UTAMA
+================================ */
+.main-container {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ===============================
+   JUDUL HALAMAN
+================================ */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* ===============================
+   FORM
+================================ */
+form {
+    margin-bottom: 20px;
+}
+
+/* INPUT */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ===============================
+   BUTTON
+================================ */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* ===============================
+   DAFTAR TODO
+================================ */
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #f8f9fa;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* ===============================
+   LINK AKSI (HAPUS / LOGOUT)
+================================ */
+a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-size: 13px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   FOOTER LINK
+================================ */
+.logout {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 480px) {
+    .main-container {
+        padding: 20px;
+    }
+}
