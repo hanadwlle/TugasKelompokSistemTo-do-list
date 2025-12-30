@@ -1,14 +1,11 @@
 <?php
-// Commit test: login validation improved by Hanad
 session_start();
 include "../config/koneksi.php";
 
-// Validasi dan proses login user
 if (isset($_POST['login'])) {
     $email = trim($_POST['email']);
     $pass  = $_POST['password'];
 
-    // Validasi input kosong
     if (empty($email) || empty($pass)) {
         echo "Email dan password wajib diisi";
         exit;
@@ -30,5 +27,5 @@ if (isset($_POST['login'])) {
 <form method="post">
     <input name="email" placeholder="Email" required>
     <input type="password" name="password" placeholder="Password" required>
-    <button name="login">Login</button>
+    <button type="submit" name="login">Login</button>
 </form>
