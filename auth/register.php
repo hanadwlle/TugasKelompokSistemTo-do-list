@@ -1,21 +1,40 @@
 <?php
-require "../config/koneksi.php";
+include "../config/koneksi.php";
 
 if (isset($_POST['register'])) {
-    $nama = htmlspecialchars($_POST['nama']);
-    $email = htmlspecialchars($_POST['email']);
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $username = trim($_POST['username']);
+    $email    = trim($_POST['email']);
+    $password = $_POST['password'];
 
-    $stmt = $pdo->prepare("INSERT INTO users VALUES (NULL,?,?,?,NOW())");
-    $stmt->execute([$nama, $email, $password]);
+    // Validasi input kosong
+    if (empty($username) || empty($email) || empty($password)) {
+        echo "Semua field wajib diisi";
+        exit;
+    }
+
+    // Cek email sudah terdaftar
+    $cek = mysqli_query($conn, "SELECT id FROM users WHERE email='$email'");
+    if (mysqli_num_rows($cek) > 0) {
+        echo "Email sudah terdaftar";
+        exit;
+    }
+
+    $passHash = password_hash($password, PASSWORD_DEFAULT);
+
+    mysqli_query(
+        $conn,
+        "INSERT INTO users (name, email, password) 
+         VALUES ('$username', '$email', '$passHash')"
+    );
 
     header("Location: login.php");
+    exit;
 }
 ?>
 
-<form method="POST">
-    <input type="text" name="nama" placeholder="Nama" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <input type="password" name="password" placeholder="Password" required>
+<form method="post">
+    <input name="username" placeholder="Username">
+    <input name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="Password">
     <button name="register">Register</button>
 </form>
