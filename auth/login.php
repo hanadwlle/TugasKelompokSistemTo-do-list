@@ -1,26 +1,34 @@
 <?php
-require "../config/koneksi.php";
+// Commit test: login validation improved by Hanad
+session_start();
+include "../config/koneksi.php";
 
+// Validasi dan proses login user
 if (isset($_POST['login'])) {
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = trim($_POST['email']);
+    $pass  = $_POST['password'];
 
-    $stmt = $pdo->prepare("SELECT * FROM users WHERE email=?");
-    $stmt->execute([$email]);
-    $user = $stmt->fetch();
+    // Validasi input kosong
+    if (empty($email) || empty($pass)) {
+        echo "Email dan password wajib diisi";
+        exit;
+    }
 
-    if ($user && password_verify($password, $user['password'])) {
+    $q = mysqli_query($conn, "SELECT * FROM users WHERE email='$email'");
+    $user = mysqli_fetch_assoc($q);
+
+    if ($user && password_verify($pass, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
-        $_SESSION['nama'] = $user['nama'];
         header("Location: ../dashboard.php");
+        exit;
     } else {
-        echo "Login gagal";
+        echo "Login gagal. Email atau password salah.";
     }
 }
 ?>
 
-<form method="POST">
-    <input type="email" name="email" required>
-    <input type="password" name="password" required>
+<form method="post">
+    <input name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
     <button name="login">Login</button>
 </form>
