@@ -12,8 +12,9 @@ if (isset($_SESSION['user_id'])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Aplikasi Todo List</h2>
-    <a href="auth/login.php">Login</a> |
-    <a href="auth/register.php">Register</a>
+    <div class="container">
+        <h2>Aplikasi Todo List</h2>
+        <a href="auth/login.php" class="btn login">Login</a>
+        <a href="auth/register.php" class="btn register">Register</a>
+    </div>
 </body>
-</html>
