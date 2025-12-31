@@ -1,20 +1,14 @@
-/* perubahan baru */
-
-/* ===============================
-   RESET & DASAR
-================================ */
+/* =============================== RESET & DASAR ============================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* versi lokal */
 }
 
-/* ===============================
-   BODY
-================================ */
+/* =============================== BODY ============================== */
 body {
-    background-color: #f2f4f7;
+    background-color: #f2f4f7; /* versi lokal */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,32 +16,27 @@ body {
     color: #333;
 }
 
-/* ===============================
-   CONTAINER UTAMA
-================================ */
-.main-container {
+/* =============================== CONTAINER UTAMA ============================== */
+.main-container, .container {
     width: 100%;
-    max-width: 420px;
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    max-width: 420px; /* dari lokal */
+    background-color: #ffffff; /* dari lokal */
+    padding: 40px; /* gabungan: pakai padding GitHub */
+    border-radius: 16px; /* dari GitHub */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* gabungan */
+    text-align: center; /* dari GitHub */
 }
 
-/* ===============================
-   JUDUL HALAMAN
-================================ */
+/* =============================== JUDUL HALAMAN ============================== */
 h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #2c3e50;
+    text-align: center; /* dari lokal */
+    margin-bottom: 30px; /* gabungan: pakai GitHub */
+    color: #2c3e50; /* versi lokal */
 }
 
-/* ===============================
-   FORM
-================================ */
+/* =============================== FORM ============================== */
 form {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* dari lokal */
 }
 
 /* INPUT */
@@ -59,27 +48,27 @@ form input {
     border-radius: 5px;
 }
 
-/* ===============================
-   BUTTON
-================================ */
-button {
+/* =============================== BUTTON ============================== */
+button, .btn {
     width: 100%;
-    padding: 10px;
-    background-color: #3498db;
+    padding: 12px; /* gabungan: pakai dari GitHub */
+    background-color: #3498db; /* versi lokal */
     border: none;
-    border-radius: 5px;
+    border-radius: 10px; /* gabungan */
     color: #ffffff;
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none; /* dari GitHub */
+    display: block; /* dari GitHub */
+    margin-bottom: 12px; /* dari GitHub */
 }
 
-button:hover {
+button:hover, .btn:hover {
     background-color: #2980b9;
+    opacity: 0.9; /* dari GitHub */
 }
 
-/* ===============================
-   DAFTAR TODO
-================================ */
+/* =============================== DAFTAR TODO ============================== */
 ul {
     list-style: none;
 }
@@ -95,9 +84,7 @@ li {
     font-size: 14px;
 }
 
-/* ===============================
-   LINK AKSI (HAPUS / LOGOUT)
-================================ */
+/* =============================== LINK AKSI (HAPUS / LOGOUT) ============================== */
 a {
     text-decoration: none;
     color: #e74c3c;
@@ -108,9 +95,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ===============================
-   FOOTER LINK
-================================ */
+/* =============================== FOOTER LINK ============================== */
 .logout {
     display: block;
     text-align: center;
@@ -118,9 +103,7 @@ a:hover {
     font-weight: bold;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
+/* =============================== RESPONSIVE ============================== */
 @media (max-width: 480px) {
     .main-container {
         padding: 20px;
