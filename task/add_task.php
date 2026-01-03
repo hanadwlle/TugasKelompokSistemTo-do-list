@@ -21,4 +21,4 @@ mysqli_query($conn,
 ); // Menjalankan query untuk menambahkan data tugas ke database
 
 header("Location: ../dashboard.php"); // Setelah berhasil, redirect ke halaman dashboard
-exit; // Hentikan script supaya tidak menjalankan kode lain
+exit; // Menghentikan script supaya tidak menjalankan kode lain
