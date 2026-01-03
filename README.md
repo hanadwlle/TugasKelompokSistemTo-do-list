@@ -71,10 +71,10 @@ TugasKelompokSistemTo-do-list/
 1. Install **XAMPP** di komputer  
 2. Jalankan **Apache dan MySQL** melalui XAMPP Control Panel  
 3. Buka browser dan akses: http://localhost/phpmyadmin
-4. ⁠Buat database baru: todo_list
+4. ⁠Buat database baru: todo_db
 5. ⁠Import file database: database.sql
 6. ⁠Salin folder project ke direktori: C:\xampp\htdocs\TugasKelompokSistemTo-do-list
-7. ⁠Jalankan aplikasi melalui browser: http://localhost/TugasKelompokSistemTo-do-list
+7. ⁠Jalankan aplikasi melalui browser: http://localhost/TugasKelompokSistemTo-do-list/index.php
 8. ⁠Registrasi akun baru, kemudian login untuk menggunakan seluruh fitur aplikasi
 
 ---
@@ -83,5 +83,6 @@ TugasKelompokSistemTo-do-list/
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
