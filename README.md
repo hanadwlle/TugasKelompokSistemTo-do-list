@@ -12,7 +12,8 @@ Setelah login, pengguna dapat :
 - Mengedit tugas
 - Menghapus tugas
 - Memperbarui status tugas (selesai/belum selesai)
-- Logout dari sistem  
+- Logout dari sistem
+  
 
 Aplikasi menggunakan **session** untuk membatasi akses pengguna.
 
@@ -85,6 +86,7 @@ TugasKelompokSistemTo-do-list/
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
