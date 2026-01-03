@@ -3,8 +3,10 @@
 ## Deskripsi Singkat
 Aplikasi Login dan Manajemen Tugas adalah aplikasi web berbasis PHP dan MySQL
 yang menyediakan fitur autentikasi pengguna serta manajemen data tugas.
-Pengguna harus login terlebih dahulu untuk mengakses sistem.  
-Jika belum memiliki akun, pengguna dapat melakukan registrasi.  
+Pengguna harus login terlebih dahulu untuk mengakses sistem.
+Jika belum memiliki akun, pengguna dapat melakukan registrasi.
+Aplikasi ini memungkinkan pengguna menambah, melihat, dan menghapus tugas
+sesuai dengan akun yang sedang login.  
 Setelah login, pengguna dapat :
 - Menambahkan tugas
 - Mengedit tugas
@@ -83,6 +85,7 @@ TugasKelompokSistemTo-do-list/
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
