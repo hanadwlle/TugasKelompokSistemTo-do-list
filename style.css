@@ -1,9 +1,9 @@
-/Bagian Reset
+/Bagian Reset/
 * {
   box-sizing: border-box;
 }
 
-/Tampilan Dasar Halaman
+/Tampilan Dasar Halaman/
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #f4f6f8;
@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-/Container 
+/Container/
 .container {
   width: 420px;
   margin: 60px auto;
