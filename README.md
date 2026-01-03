@@ -5,7 +5,7 @@ Aplikasi Login dan Manajemen Tugas adalah aplikasi web berbasis PHP dan MySQL
 yang menyediakan fitur autentikasi pengguna serta manajemen data tugas.
 Pengguna harus login terlebih dahulu untuk mengakses sistem.  
 Jika belum memiliki akun, pengguna dapat melakukan registrasi.  
-Setelah login, pengguna dapat:
+Setelah login, pengguna dapat :
 - Menambahkan tugas
 - Mengedit tugas
 - Menghapus tugas
@@ -19,10 +19,10 @@ Aplikasi menggunakan **session** untuk membatasi akses pengguna.
 ## Daftar Anggota
 | No | Nama Lengkap               | NIM        | Username GitHub        | Peran / Tugas |
 |----|----------------------------|------------|------------------------|---------------|
-| 1  | Ni Putu Listya Aprianti    | 240030023  | listyaaprianti         | Fullstack Developer |
-| 2  | Putu Nadia Christiani      | 240030037  | christianinadia94-lgtm |
-| 3  | Ni Ketut Mandarini Xioshin | 240030038  | mandarinixioshin       |
-| 4  | Kadek Hana Dwi Lestari     | 240020043  | hanadwlle              |
+| 1  | Ni Putu Listya Aprianti    | 240030023  | listyaaprianti         | |
+| 2  | Putu Nadia Christiani      | 240030037  | christianinadia94-lgtm ||
+| 3  | Ni Ketut Mandarini Xioshin | 240030038  | mandarinixioshin       ||
+| 4  | Kadek Hana Dwi Lestari     | 240020043  | hanadwlle              ||
 
 ---
 
@@ -83,6 +83,7 @@ TugasKelompokSistemTo-do-list/
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
