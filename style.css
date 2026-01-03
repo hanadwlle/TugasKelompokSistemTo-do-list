@@ -1,8 +1,9 @@
-/* Reset ringan */
+/Bagian Reset
 * {
   box-sizing: border-box;
 }
 
+/Tampilan Dasar Halaman
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #f4f6f8;
@@ -10,7 +11,7 @@ body {
   padding: 0;
 }
 
-/* Card utama */
+/Container (Card Utama)
 .container {
   width: 420px;
   margin: 60px auto;
@@ -20,13 +21,13 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Judul */
+/Judul
 h2, h3 {
   margin-top: 0;
   text-align: center;
 }
 
-/* Form */
+/Form input
 form {
   margin-bottom: 15px;
 }
@@ -56,7 +57,7 @@ button:hover {
   background: #4338ca;
 }
 
-/* List task */
+/List task
 ul {
   list-style: none;
   padding: 0;
@@ -68,7 +69,7 @@ li {
   font-size: 14px;
 }
 
-/* Link aksi */
+/Link aksi 
 a {
   text-decoration: none;
   color: #2563eb;
@@ -80,7 +81,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Link kecil bawah */
+/Link kecil bawah
 .link-bottom {
   display: block;
   text-align: center;
