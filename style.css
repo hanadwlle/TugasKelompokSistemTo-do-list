@@ -57,7 +57,7 @@ button:hover {
   background: #4338ca;
 }
 
-/List task
+/List task/
 ul {
   list-style: none;
   padding: 0;
@@ -69,7 +69,7 @@ li {
   font-size: 14px;
 }
 
-/Link aksi 
+/Link aksi/
 a {
   text-decoration: none;
   color: #2563eb;
@@ -81,7 +81,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/Link kecil bawah
+/Link kecil bawah/
 .link-bottom {
   display: block;
   text-align: center;
