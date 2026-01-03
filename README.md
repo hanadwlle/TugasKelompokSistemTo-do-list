@@ -51,19 +51,19 @@ Fitur utama aplikasi:
 
 ## Struktur Folder
 TugasKelompokSistemTo-do-list/
-├── index.php          # Halaman awal aplikasi
-├── login.php          # Proses login
-├── register.php       # Proses registrasi
-├── logout.php         # Proses logout
-├── dashboard.php      # Halaman utama setelah login
-├── koneksi.php        # File konfigurasi dan koneksi database
-├── add_task.php       # Menambah tugas baru
-├── edit_task.php      # Mengedit data tugas
-├── delete_task.php    # Menghapus tugas
-├── update_status.php  # Memperbarui status tugas
-├── style.css          # Styling tampilan aplikasi
-├── database.sql       # Struktur dan data awal database
-└── README.md          # Dokumentasi project
+- index.php            # Halaman awal aplikasi
+- login.php          # Proses login
+- register.php       # Proses registrasi
+- logout.php         # Proses logout
+- dashboard.php      # Halaman utama setelah login
+- koneksi.php        # File konfigurasi dan koneksi database
+- add_task.php       # Menambah tugas baru
+- edit_task.php      # Mengedit data tugas
+- delete_task.php    # Menghapus tugas
+- update_status.php  # Memperbarui status tugas
+- style.css          # Styling tampilan aplikasi
+- database.sql       # Struktur dan data awal database
+- README.md          # Dokumentasi project
 
 ---
 
@@ -83,6 +83,7 @@ TugasKelompokSistemTo-do-list/
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
