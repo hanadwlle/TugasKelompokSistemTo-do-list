@@ -17,9 +17,11 @@ Aplikasi menggunakan **session** untuk membatasi akses pengguna.
 ---
 
 ## Daftar Anggota
-| No | Nama Lengkap   | NIM        | Username GitHub  | Peran / Tugas |
-|----|---------------|------------|-----------------|---------------|
-| 1  | Nama Mahasiswa | 22XXXXXXXX | username-github | Fullstack Developer |
+| No | Nama Lengkap            | NIM        | Username GitHub  | Peran / Tugas |
+|----|-------------------------|------------|-----------------|---------------|
+| 1  | Ni Putu Listya Aprianti | 240030023 | listyaaprianti | Fullstack Developer |
+| 2  | 
+
 
 ---
 
@@ -80,3 +82,4 @@ TugasKelompokSistemTo-do-list/
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
