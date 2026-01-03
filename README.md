@@ -23,7 +23,7 @@ Aplikasi menggunakan **session** untuk membatasi akses pengguna.
 |----|----------------------------|------------|------------------------|---------------|
 | 1  | Ni Putu Listya Aprianti    | 240030023  | listyaaprianti         | |
 | 2  | Putu Nadia Christiani      | 240030037  | christianinadia94-lgtm ||
-| 3  | Ni Ketut Mandarini Xioshin | 240030038  | mandarinixioshin       ||
+| 3  | Ni Ketut Mandarini Xioshin | 240030038  | mandarinixioshin       | Backend Developer |
 | 4  | Kadek Hana Dwi Lestari     | 240020043  | hanadwlle              ||
 
 ---
@@ -85,6 +85,7 @@ TugasKelompokSistemTo-do-list/
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
