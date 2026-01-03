@@ -9,7 +9,7 @@ if (isset($_SESSION['user_id'])) {
     exit;
 }
 
-// Proses login
+// Proses login.
 if (isset($_POST['login'])) {
     $email = trim($_POST['email']);
     $password = $_POST['password'];
