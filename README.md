@@ -22,7 +22,7 @@ Aplikasi menggunakan **session** untuk membatasi akses pengguna.
 ## Daftar Anggota
 | No | Nama Lengkap               | NIM        | Username GitHub        | Peran / Tugas                                       |
 |----|----------------------------|------------|------------------------|-----------------------------------------------------|
-| 1  | Ni Putu Listya Aprianti    | 240030023  | listyaaprianti         |                                                     |
+| 1  | Ni Putu Listya Aprianti    | 240030023  | listyaaprianti         | Berperan dalam penataan tampilan aplikasi menggunakan CSS, penyesuaian halaman utama index.php, serta pembaruan dokumentasi pada README.md.                                                  |
 | 2  | Putu Nadia Christiani      | 240030037  | christianinadia94-lgtm | update add task, update status, update style.css, menambahkan README, menambahkan keterangan di add task dan update status                                               |
 | 3  | Ni Ketut Mandarini Xioshin | 240030038  | mandarinixioshin       | Mengupdate config (koneksi), Update Database sql, Update add taks, Update style.css,  Update delete teks, dan Menambahkan README.                                                    |
 | 4  | Kadek Hana Dwi Lestari     | 240020043  | hanadwlle              | Mengembangkan fitur login dan register pengguna, Mengelola session autentikasi menggunakan PHP, Menambahkan validasi input dan keamanan password, Mengimplementasikan fitur logout pengguna          
@@ -86,6 +86,7 @@ TugasKelompokSistemTo-do-list/
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
