@@ -27,12 +27,12 @@ Aplikasi menggunakan **session** untuk membatasi akses pengguna.
 ---
 
 ## Lingkungan Pengembangan
-- Sistem Operasi: Windows  
-- Web Server: Apache (XAMPP)  
-- Bahasa Pemrograman: PHP  
-- Database: MySQL  
-- Frontend: HTML & CSS  
-- Tools:
+- Sistem Operasi : Windows  
+- Web Server : Apache (XAMPP)  
+- Bahasa Pemrograman : PHP  
+- Database : MySQL  
+- Frontend : HTML & CSS  
+- Tools :
   - Visual Studio Code
   - phpMyAdmin
   - Google Chrome
@@ -40,7 +40,7 @@ Aplikasi menggunakan **session** untuk membatasi akses pengguna.
 ---
 
 ## Hasil Pengembangan
-Fitur utama aplikasi:
+Fitur utama aplikasi :
 - Registrasi pengguna  
 - Login & logout pengguna  
 - Autentikasi dengan session  
@@ -51,7 +51,7 @@ Fitur utama aplikasi:
 
 ## Struktur Folder
 TugasKelompokSistemTo-do-list/
-- index.php            # Halaman awal aplikasi
+- index.php          # Halaman awal aplikasi
 - login.php          # Proses login
 - register.php       # Proses registrasi
 - logout.php         # Proses logout
@@ -70,11 +70,11 @@ TugasKelompokSistemTo-do-list/
 ## Cara Instalasi dan Menjalankan Aplikasi
 1. Install **XAMPP** di komputer  
 2. Jalankan **Apache dan MySQL** melalui XAMPP Control Panel  
-3. Buka browser dan akses: http://localhost/phpmyadmin
-4. ⁠Buat database baru: todo_db
-5. ⁠Import file database: database.sql
-6. ⁠Salin folder project ke direktori: C:\xampp\htdocs\TugasKelompokSistemTo-do-list
-7. ⁠Jalankan aplikasi melalui browser: http://localhost/TugasKelompokSistemTo-do-list/index.php
+3. Buka browser dan akses : http://localhost/phpmyadmin
+4. ⁠Buat database baru : todo_db
+5. ⁠Import file database : database.sql
+6. ⁠Salin folder project ke direktori : C:\xampp\htdocs\TugasKelompokSistemTo-do-list
+7. ⁠Jalankan aplikasi melalui browser : http://localhost/TugasKelompokSistemTo-do-list/index.php
 8. ⁠Registrasi akun baru, kemudian login untuk menggunakan seluruh fitur aplikasi
 
 ---
@@ -83,6 +83,7 @@ TugasKelompokSistemTo-do-list/
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
