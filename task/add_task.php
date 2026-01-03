@@ -2,12 +2,23 @@
 session_start();
 include "../config/koneksi.php";
 
-$title = $_POST['title'];
-$desc  = $_POST['desc'];
-$date  = $_POST['date'];
+if (!isset($_SESSION['user_id'])) {
+    die("Akses ditolak");
+}
+
+$user_id = $_SESSION['user_id'];
+$title = trim($_POST['title']);
+$description = trim($_POST['description']);
+$due_date = $_POST['due_date'];
+
+if (empty($title)) {
+    die("Judul wajib diisi");
+}
 
 mysqli_query($conn,
-    "INSERT INTO todos VALUES (NULL, '{$_SESSION['user_id']}', '$title', '$desc', '$date', 'pending')"
+    "INSERT INTO tasks (user_id, title, description, due_date)
+     VALUES ('$user_id', '$title', '$description', '$due_date')"
 );
+
 header("Location: ../dashboard.php");
-header("Location: ../dashboard.php");
+exit;

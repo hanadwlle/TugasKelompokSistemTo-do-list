@@ -1,53 +1,49 @@
 <?php
-require "../config/koneksi.php";
+// Halaman edit task
+session_start();
+include "../config/koneksi.php";
 
-// Cek login
+// Proteksi login
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ../index.php");
+    header("Location: ../auth/login.php");
     exit;
 }
 
-// Ambil ID task
 $id = $_GET['id'] ?? null;
-if (!$id) {
-    die("ID task tidak ditemukan");
-}
 
-// Ambil data task milik user
-$stmt = $pdo->prepare(
-    "SELECT * FROM tasks WHERE id = ? AND user_id = ?"
+// Ambil data task berdasarkan id & user
+$query = mysqli_query(
+    $conn,
+    "SELECT * FROM tasks 
+     WHERE id='$id' AND user_id='{$_SESSION['user_id']}'"
 );
-$stmt->execute([$id, $_SESSION['user_id']]);
-$task = $stmt->fetch();
+
+$task = mysqli_fetch_assoc($query);
 
 if (!$task) {
-    die("Task tidak ditemukan");
-}
-
-// Jika form disubmit
-if (isset($_POST['update'])) {
-    $judul = htmlspecialchars($_POST['judul']);
-    $deskripsi = htmlspecialchars($_POST['deskripsi']);
-    $deadline = $_POST['deadline'];
-
-    $update = $pdo->prepare(
-        "UPDATE tasks 
-         SET judul = ?, deskripsi = ?, deadline = ?
-         WHERE id = ? AND user_id = ?"
-    );
-    $update->execute([
-        $judul,
-        $deskripsi,
-        $deadline,
-        $id,
-        $_SESSION['user_id']
-    ]);
-
-    header("Location: ../dashboard.php");
+    echo "Task tidak ditemukan";
     exit;
 }
-?>
 
+// Proses update task
+if (isset($_POST['update'])) {
+    $title = trim($_POST['title']);
+    $description = trim($_POST['description']);
+
+    if (empty($title)) {
+        $error = "Judul tidak boleh kosong";
+    } else {
+        mysqli_query(
+            $conn,
+            "UPDATE tasks 
+             SET title='$title', description='$description'
+             WHERE id='$id'"
+        );
+        header("Location: ../dashboard.php");
+        exit;
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,25 +52,21 @@ if (isset($_POST['update'])) {
 </head>
 <body>
 
-<h2>Edit Task</h2>
+<div class="container">
+    <h2>Edit Task</h2>
 
-<form method="POST">
-    <label>Judul</label><br>
-    <input type="text" name="judul"
-           value="<?= htmlspecialchars($task['judul']); ?>" required><br><br>
+    <?php if (isset($error)) : ?>
+        <p style="color:red; text-align:center"><?= $error ?></p>
+    <?php endif; ?>
 
-    <label>Deskripsi</label><br>
-    <textarea name="deskripsi"><?= htmlspecialchars($task['deskripsi']); ?></textarea><br><br>
+    <form method="post">
+        <input type="text" name="title" value="<?= htmlspecialchars($task['title']) ?>" required>
+        <textarea name="description"><?= htmlspecialchars($task['description']) ?></textarea>
+        <button type="submit" name="update">Simpan Perubahan</button>
+    </form>
 
-    <label>Deadline</label><br>
-    <input type="date" name="deadline"
-           value="<?= $task['deadline']; ?>" required><br><br>
-
-    <button type="submit" name="update">Simpan Perubahan</button>
-</form>
-
-<br>
-<a href="../dashboard.php">⬅ Kembali</a>
+    <a class="link-bottom" href="../dashboard.php">← Kembali</a>
+</div>
 
 </body>
 </html>

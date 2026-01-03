@@ -1,111 +1,89 @@
-/* =============================== RESET & DASAR ============================== */
+/* Reset ringan */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif; /* versi lokal */
+  box-sizing: border-box;
 }
 
-/* =============================== BODY ============================== */
 body {
-    background-color: #f2f4f7; /* versi lokal */
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
 }
 
-/* =============================== CONTAINER UTAMA ============================== */
-.main-container, .container {
-    width: 100%;
-    max-width: 420px; /* dari lokal */
-    background-color: #ffffff; /* dari lokal */
-    padding: 40px; /* gabungan: pakai padding GitHub */
-    border-radius: 16px; /* dari GitHub */
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* gabungan */
-    text-align: center; /* dari GitHub */
+/* Card utama */
+.container {
+  width: 420px;
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 20px 22px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* =============================== JUDUL HALAMAN ============================== */
-h2 {
-    text-align: center; /* dari lokal */
-    margin-bottom: 30px; /* gabungan: pakai GitHub */
-    color: #2c3e50; /* versi lokal */
+/* Judul */
+h2, h3 {
+  margin-top: 0;
+  text-align: center;
 }
 
-/* =============================== FORM ============================== */
+/* Form */
 form {
-    margin-bottom: 20px; /* dari lokal */
+  margin-bottom: 15px;
 }
 
-/* INPUT */
-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input, textarea, button {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
 }
 
-/* =============================== BUTTON ============================== */
-button, .btn {
-    width: 100%;
-    padding: 12px; /* gabungan: pakai dari GitHub */
-    background-color: #3498db; /* versi lokal */
-    border: none;
-    border-radius: 10px; /* gabungan */
-    color: #ffffff;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none; /* dari GitHub */
-    display: block; /* dari GitHub */
-    margin-bottom: 12px; /* dari GitHub */
+textarea {
+  resize: vertical;
 }
 
-button:hover, .btn:hover {
-    background-color: #2980b9;
-    opacity: 0.9; /* dari GitHub */
+button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 12px;
 }
 
-/* =============================== DAFTAR TODO ============================== */
+button:hover {
+  background: #4338ca;
+}
+
+/* List task */
 ul {
-    list-style: none;
+  list-style: none;
+  padding: 0;
 }
 
 li {
-    background-color: #f8f9fa;
-    padding: 10px 12px;
-    margin-bottom: 8px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
 }
 
-/* =============================== LINK AKSI (HAPUS / LOGOUT) ============================== */
+/* Link aksi */
 a {
-    text-decoration: none;
-    color: #e74c3c;
-    font-size: 13px;
+  text-decoration: none;
+  color: #2563eb;
+  margin-left: 6px;
+  font-size: 13px;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* =============================== FOOTER LINK ============================== */
-.logout {
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-/* =============================== RESPONSIVE ============================== */
-@media (max-width: 480px) {
-    .main-container {
-        padding: 20px;
-    }
+/* Link kecil bawah */
+.link-bottom {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 13px;
 }
