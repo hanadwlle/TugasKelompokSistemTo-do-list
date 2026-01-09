@@ -84,11 +84,11 @@ li small {
   margin-top: 5px;
 }
 
-/Link aksi/
+/*Fitur*/
 a {
   text-decoration: none;
   color: #2563eb;
-  margin-left: 6px;
+  margin-left: 10px 0;
   font-size: 13px;
 }
 
@@ -96,10 +96,32 @@ a:hover {
   text-decoration: underline;
 }
 
-/Link kecil bawah/
+/*Logout*/
 .link-bottom {
   display: block;
   text-align: center;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+/*Jarak List Tugas dan Fitur*/
+.action-buttons {
   margin-top: 10px;
-  font-size: 13px;
+}
+
+.deadline-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.deadline-group label {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.deadline-group input[type="date"] {
+  flex: 1;
 }
