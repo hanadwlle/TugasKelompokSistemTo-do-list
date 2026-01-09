@@ -1,9 +1,9 @@
-/Bagian Reset/
+/*Bagian Reset*/
 * {
   box-sizing: border-box;
 }
 
-/Tampilan Dasar Halaman/
+/*Tampilan Dasar Halaman*/
 body {
   font-family: 'Poppins', sans-serif;
   background: #f4f6f8;
@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-/Container/
+/*Container*/
 .container {
   width: 750px;
   margin: 60px auto;
@@ -21,24 +21,27 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/Judul/
+/*Judul*/
 h2, h3 {
-  margin-top: 0;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
-/Form input/
+/*Form*/
 form {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 input, textarea, button {
   width: 100%;
-  padding: 8px 10px;
-  margin-top: 8px;
-  border-radius: 4px;
+  padding: 10px 10px;
+  margin-top: 5px;
+  border-radius: 10px;
   border: 1px solid #ccc;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 textarea {
@@ -50,7 +53,7 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 button:hover {
