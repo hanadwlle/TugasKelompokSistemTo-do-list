@@ -74,6 +74,16 @@ li {
   border-bottom: 3px solid #eee;
 }
 
+li strong {
+  font-size: 18px;
+}
+
+li small {
+  display: block;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
 /Link aksi/
 a {
   text-decoration: none;
