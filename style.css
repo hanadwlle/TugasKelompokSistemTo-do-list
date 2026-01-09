@@ -60,16 +60,18 @@ button:hover {
   background: #4338ca;
 }
 
-/List task/
+/*List Tugas*/
 ul {
+  margin-top: 0;
   list-style: none;
   padding: 0;
 }
 
 li {
-  padding: 8px 0;
-  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
   font-size: 14px;
+  line-height: 1.4;
+  border-bottom: 3px solid #eee;
 }
 
 /Link aksi/
