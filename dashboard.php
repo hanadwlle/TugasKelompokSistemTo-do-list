@@ -68,7 +68,7 @@ $data = mysqli_query(
         </small>
     <?php endif; ?>
 
-    <!-- Aksi -->
+    <!-- Aksi --> 
     <div class="action-buttons">
         <a href="task/edit_task.php?id=<?= $row['id'] ?>">Edit</a> |
         <a href="task/update_status.php?id=<?= $row['id'] ?>">Selesai</a> |
