@@ -9,7 +9,7 @@ if (isset($_SESSION['user_id'])) {
     exit;
 }
 
-// Proses login.
+// Proses login
 if (isset($_POST['login'])) {
     $email = trim($_POST['email']);
     $password = $_POST['password'];
@@ -34,6 +34,7 @@ if (isset($_POST['login'])) {
 <html>
 <head>
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
