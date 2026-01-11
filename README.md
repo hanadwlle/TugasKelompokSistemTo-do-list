@@ -26,16 +26,6 @@ Aplikasi To-Do List berbasis web merupakan sistem yang dirancang untuk membantu 
 
 ---
 
-## Hasil Pengembangan
-Fitur utama aplikasi :
-- Registrasi pengguna  
-- Login & logout pengguna  
-- Autentikasi dengan session  
-- Manajemen tugas (tambah, edit, hapus, update status)  
-- Koneksi database MySQL  
-
----
-
 ## Struktur Folder
 TugasKelompokSistemTo-do-list/
 auth/
@@ -59,7 +49,7 @@ task/
 - README.md          # Dokumentasi project
 
 ---
-Hasil Pengembangan (Implementasi Modul & Fitur)
+## Hasil Pengembangan (Implementasi Modul & Fitur)
 1. Modul Autentikasi (Authentication)
    - Register pengguna baru
    - Login pengguna
@@ -94,6 +84,7 @@ Hasil Pengembangan (Implementasi Modul & Fitur)
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
