@@ -27,21 +27,22 @@ Aplikasi To-Do List berbasis web merupakan sistem yang dirancang untuk membantu 
 ---
 
 ## Struktur Folder
-TugasKelompokSistemTo-do-list/
-auth/
+TugasKelompokSistemTo-do-list
+
+auth
 - login.php          # Proses login
 - register.php       # Proses registrasi
 - logout.php         # Proses logout
 
-config/
+config
 - koneksi.php        # File konfigurasi dan koneksi database
 
-task/
+task
 - add_task.php       # Menambah tugas baru
 - edit_task.php      # Mengedit data tugas
 - delete_task.php    # Menghapus tugas
 - update_status.php  # Memperbarui status tugas
-/
+
 - dashboard.php      # Halaman utama setelah login
 - index.php          # Halaman awal aplikasi
 - style.css          # Styling tampilan aplikasi
@@ -84,6 +85,7 @@ task/
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
