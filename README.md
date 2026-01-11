@@ -35,20 +35,20 @@ auth
 - logout.php         # Proses logout
 
 config
-- koneksi.php        # File konfigurasi dan koneksi database
+- koneksi.php          # File konfigurasi dan koneksi database
 
 task
-- add_task.php       # Menambah tugas baru
-- edit_task.php      # Mengedit data tugas
-- delete_task.php    # Menghapus tugas
-- update_status.php  # Memperbarui status tugas
+- add_task.php        # Menambah tugas baru
+- edit_task.php       # Mengedit data tugas
+- delete_task.php     # Menghapus tugas
+- update_status.php   # Memperbarui status tugas
 
 
-- dashboard.php      # Halaman utama setelah login
-- index.php          # Halaman awal aplikasi
-- style.css          # Styling tampilan aplikasi
-- database.sql       # Struktur dan data awal database
-- README.md          # Dokumentasi project
+dashboard.php      # Halaman utama setelah login
+index.php          # Halaman awal aplikasi
+style.css          # Styling tampilan aplikasi
+database.sql       # Struktur dan data awal database
+README.md          # Dokumentasi project
 
 ---
 ## Hasil Pengembangan (Implementasi Modul & Fitur)
@@ -86,6 +86,7 @@ task
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
