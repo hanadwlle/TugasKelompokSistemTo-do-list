@@ -1,5 +1,5 @@
 <?php
-// Memulai session dan koneksi database
+//Memulai session dan koneksi database
 session_start();
 include "config/koneksi.php";
 
@@ -29,7 +29,7 @@ $data = mysqli_query(
 <div class="container">
     <h2>To-do List</h2>
 
-    <!-- Form tambah task -->
+    //Form tambah task
     <form action="task/add_task.php" method="post">
         <input type="text" name="title" placeholder="Judul Tugas" required>
         <textarea name="description" placeholder="Deskripsi Tugas"></textarea>
