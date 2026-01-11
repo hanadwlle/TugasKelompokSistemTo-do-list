@@ -30,6 +30,7 @@ if (isset($_POST['update'])) {
     $title = trim($_POST['title']);
     $description = trim($_POST['description']);
 
+
     if (empty($title)) {
         $error = "Judul tidak boleh kosong";
     } else {
