@@ -1,21 +1,7 @@
 # Aplikasi Login dan Manajemen Tugas
 
 ## Deskripsi Singkat
-Aplikasi Login dan Manajemen Tugas adalah aplikasi web berbasis PHP dan MySQL
-yang menyediakan fitur autentikasi pengguna serta manajemen data tugas.
-Pengguna harus login terlebih dahulu untuk mengakses sistem.
-Jika belum memiliki akun, pengguna dapat melakukan registrasi.
-Aplikasi ini memungkinkan pengguna menambah, melihat, dan menghapus tugas
-sesuai dengan akun yang sedang login.  
-Setelah login, pengguna dapat :
-- Menambahkan tugas
-- Mengedit tugas
-- Menghapus tugas
-- Memperbarui status tugas (selesai/belum selesai)
-- Logout dari sistem
-  
-
-Aplikasi menggunakan **session** untuk membatasi akses pengguna.
+Aplikasi To-Do List berbasis web merupakan sistem yang dirancang untuk membantu pengguna dalam mengelola dan mencatat tugas sehari-hari secara terstruktur dan efisien. Aplikasi ini dilengkapi dengan sistem autentikasi sehingga setiap pengguna memiliki akun dan hanya dapat mengakses serta mengelola data tugas miliknya sendiri. Pengguna dapat menambahkan tugas baru, melihat daftar tugas, mengedit informasi tugas, menghapus tugas, serta menandai tugas sebagai selesai, lengkap dengan pengaturan deadline. Aplikasi dikembangkan menggunakan PHP dan MySQL dengan penerapan konsep CRUD untuk pengelolaan data, serta struktur kode yang modular agar mudah dipahami dan dikembangkan. Dari sisi antarmuka, aplikasi menggunakan HTML dan CSS dengan tampilan sederhana dan mudah digunakan, serta JavaScript native untuk interaksi dasar, sehingga sistem ini dapat berfungsi secara optimal sebagai alat bantu produktivitas sekaligus media pembelajaran pengembangan aplikasi web.
 
 ---
 
@@ -32,13 +18,11 @@ Aplikasi menggunakan **session** untuk membatasi akses pengguna.
 ## Lingkungan Pengembangan
 - Sistem Operasi : Windows  
 - Web Server : Apache (XAMPP)  
-- Bahasa Pemrograman : PHP  
+- Bahasa Pemrograman : PHP (Native)
 - Database : MySQL  
-- Frontend : HTML & CSS  
-- Tools :
-  - Visual Studio Code
-  - phpMyAdmin
-  - Google Chrome
+- Frontend : HTML & CSS
+- Text Editor / IDE: Visual Studio Code
+- Browser: Google Chrome 
 
 ---
 
@@ -54,20 +38,44 @@ Fitur utama aplikasi :
 
 ## Struktur Folder
 TugasKelompokSistemTo-do-list/
-- index.php          # Halaman awal aplikasi
+auth
 - login.php          # Proses login
 - register.php       # Proses registrasi
 - logout.php         # Proses logout
-- dashboard.php      # Halaman utama setelah login
+
+config
 - koneksi.php        # File konfigurasi dan koneksi database
+
+task
 - add_task.php       # Menambah tugas baru
 - edit_task.php      # Mengedit data tugas
 - delete_task.php    # Menghapus tugas
 - update_status.php  # Memperbarui status tugas
+  
+- dashboard.php      # Halaman utama setelah login
+- index.php          # Halaman awal aplikasi
 - style.css          # Styling tampilan aplikasi
 - database.sql       # Struktur dan data awal database
 - README.md          # Dokumentasi project
 
+---
+Hasil Pengembangan (Implementasi Modul & Fitur)
+1. Modul Autentikasi (Authentication)
+   - Register pengguna baru
+   - Login pengguna
+   - Logout
+   - Proteksi halaman agar hanya bisa diakses setelah login
+2. Modul Manajemen Tugas (Task Management)
+   - Menambahkan tugas baru
+   - Menampilkan daftar tugas berdasarkan user login
+   - Mengedit tugas
+   - Menghapus tugas
+   - Menandai tugas sebagai selesai (done)
+3. Modul Dashboard
+   - Menampilkan form input tugas
+   - Menampilkan daftar tugas milik pengguna
+   - Menampilkan status tugas (pending / done)
+   - Menampilkan deadline tugas
 ---
 
 ## Cara Instalasi dan Menjalankan Aplikasi
@@ -86,6 +94,7 @@ TugasKelompokSistemTo-do-list/
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
