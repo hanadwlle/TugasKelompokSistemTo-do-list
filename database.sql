@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS users (
     name VARCHAR(100) NOT NULL, -- Nama user
     email VARCHAR(100) UNIQUE NOT NULL, -- Email (harus unik)
     password VARCHAR(255) NOT NULL, -- Password user
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Waktu pembuatan akun
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP -- Waktu pembuatan akun 
 );
 
 CREATE TABLE IF NOT EXISTS tasks (
