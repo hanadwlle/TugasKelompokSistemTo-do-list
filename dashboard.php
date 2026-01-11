@@ -29,7 +29,7 @@ $data = mysqli_query(
 <div class="container">
     <h2>To-do List</h2>
 
-    //Form tambah task
+    <!-- Form tambah task -->
     <form action="task/add_task.php" method="post">
         <input type="text" name="title" placeholder="Judul Tugas" required>
         <textarea name="description" placeholder="Deskripsi Tugas"></textarea>
@@ -46,7 +46,7 @@ $data = mysqli_query(
     <?php while ($row = mysqli_fetch_assoc($data)) : ?>
     <li>
         
-    //Judul Task 
+    <!-- Judul Task -->
     <strong>
     <?php if ($row['status'] == 'done'): ?>
         <s><?= htmlspecialchars($row['title']) ?></s>
@@ -55,21 +55,21 @@ $data = mysqli_query(
     <?php endif; ?>
     </strong>
 
-    //Deskripsi Task
+    <!-- Deskripsi Task -->
     <?php if (!empty($row['description'])) : ?>
         <small class="task-desc">
             Deskripsi : <?= htmlspecialchars($row['description']) ?>
         </small>
     <?php endif; ?>
 
-    //Deadline//
+    <!-- Deadline -->
     <?php if (!empty($row['due_date'])) : ?>
         <small class="task-deadline">
             Deadline : <?= date("d-m-Y", strtotime($row['due_date'])) ?>
         </small>
     <?php endif; ?>
 
-    //Aksi//
+    <!-- Aksi -->
     <div class="action-buttons">
         <a href="task/edit_task.php?id=<?= $row['id'] ?>">Edit</a> |
         <a href="task/update_status.php?id=<?= $row['id'] ?>">Selesai</a> |
