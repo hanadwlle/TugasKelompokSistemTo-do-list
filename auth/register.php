@@ -1,9 +1,9 @@
 <?php
-// Halaman registrasi user
+// Halaman Registrasi User
 session_start();
 include "../config/koneksi.php";
 
-// Jika sudah login, langsung ke dashboard
+// Jika sudah login, Langsung ke dashboard
 if (isset($_SESSION['user_id'])) {
     header("Location: ../dashboard.php");
     exit;
