@@ -43,6 +43,7 @@ task
 - delete_task.php    # Menghapus tugas
 - update_status.php  # Memperbarui status tugas
 
+
 - dashboard.php      # Halaman utama setelah login
 - index.php          # Halaman awal aplikasi
 - style.css          # Styling tampilan aplikasi
@@ -85,6 +86,7 @@ task
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
