@@ -49,6 +49,7 @@ if (isset($_POST['update'])) {
 <html>
 <head>
     <title>Edit Task</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -61,11 +62,21 @@ if (isset($_POST['update'])) {
     <?php endif; ?>
 
     <form method="post">
-        <input type="text" name="title" value="<?= htmlspecialchars($task['title']) ?>" required>
-        <textarea name="description"><?= htmlspecialchars($task['description']) ?></textarea>
-        <button type="submit" name="update">Simpan Perubahan</button>
-    </form>
+    <input 
+        type="text" 
+        name="title" 
+        value="<?= htmlspecialchars($task['title']) ?>" 
+        required>
 
+    <textarea name="description"><?= htmlspecialchars($task['description']) ?></textarea>
+
+    <input 
+        type="date" 
+        name="due_date" 
+        value="<?= $task['due_date'] ?>">
+
+    <button type="submit" name="update">Simpan Perubahan</button>
+</form>
     <a class="link-bottom" href="../dashboard.php">← Kembali</a>
 </div>
 
