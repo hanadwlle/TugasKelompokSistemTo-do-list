@@ -1,4 +1,4 @@
-# Aplikasi Login dan Manajemen Tugas
+# Aplikasi To-Do  list
 
 ## Deskripsi Singkat
 Aplikasi To-Do List berbasis web merupakan sistem yang dirancang untuk membantu pengguna dalam mengelola dan mencatat tugas sehari-hari secara terstruktur dan efisien. Aplikasi ini dilengkapi dengan sistem autentikasi sehingga setiap pengguna memiliki akun dan hanya dapat mengakses serta mengelola data tugas miliknya sendiri. Pengguna dapat menambahkan tugas baru, melihat daftar tugas, mengedit informasi tugas, menghapus tugas, serta menandai tugas sebagai selesai, lengkap dengan pengaturan deadline. Aplikasi dikembangkan menggunakan PHP dan MySQL dengan penerapan konsep CRUD untuk pengelolaan data, serta struktur kode yang modular agar mudah dipahami dan dikembangkan. Dari sisi antarmuka, aplikasi menggunakan HTML dan CSS dengan tampilan sederhana dan mudah digunakan, serta JavaScript native untuk interaksi dasar, sehingga sistem ini dapat berfungsi secara optimal sebagai alat bantu produktivitas sekaligus media pembelajaran pengembangan aplikasi web.
@@ -90,6 +90,7 @@ README.md          # Dokumentasi project
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
