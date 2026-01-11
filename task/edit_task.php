@@ -31,7 +31,7 @@ if (isset($_POST['update'])) {
     $description = trim($_POST['description']);
 
 
-    if (empty($title)) {
+      if (empty($title)) {
         $error = "Judul tidak boleh kosong";
     } else {
         mysqli_query(
