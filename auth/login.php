@@ -1,15 +1,15 @@
 <?php
-// Halaman login user
+// Halaman Login
 session_start();
 include "../config/koneksi.php";
 
-// Jika sudah login, langsung ke dashboard
+// Jika Sudah Login, Langsung ke Dashboard
 if (isset($_SESSION['user_id'])) {
     header("Location: ../dashboard.php");
     exit;
 }
 
-// Proses login
+// Proses Login
 if (isset($_POST['login'])) {
     $email = trim($_POST['email']);
     $password = $_POST['password'];
