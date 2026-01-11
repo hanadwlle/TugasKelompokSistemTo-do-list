@@ -45,9 +45,13 @@ task
 
 
 dashboard.php      # Halaman utama setelah login
+
 index.php          # Halaman awal aplikasi
+
 style.css          # Styling tampilan aplikasi
+
 database.sql       # Struktur dan data awal database
+
 README.md          # Dokumentasi project
 
 ---
@@ -86,6 +90,7 @@ README.md          # Dokumentasi project
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
