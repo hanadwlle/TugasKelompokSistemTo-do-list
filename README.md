@@ -9,7 +9,7 @@ Aplikasi To-Do List berbasis web merupakan sistem yang dirancang untuk membantu 
 | No | Nama Lengkap               | NIM        | Username GitHub        | Peran / Tugas                                       |
 |----|----------------------------|------------|------------------------|-----------------------------------------------------|
 | 1  | Ni Putu Listya Aprianti    | 240030023  | listyaaprianti         | Berperan dalam penataan tampilan aplikasi menggunakan CSS, penyesuaian halaman utama index.php, pengembangan dan pengaturan tampilan pada halaman dashboard.php, serta pembaruan dokumentasi pada README.md.                                                  |
-| 2  | Putu Nadia Christiani      | 240030037  | christianinadia94-lgtm | Berperan dalam pengembangan modul Task yang mencakup fitur Create, Read, Update, dan Delete (CRUD) melalui implementasi file add_task.php, edit_task.php, delete_task.php, dan update_status.php untuk pengelolaan data tugas, serta penyusunan dan pembaruan dokumentasi proyek pada file README.md.         |
+| 2  | Putu Nadia Christiani      | 240030037  | christianinadia94-lgtm | Berperan dalam penyusunan Task yang mencakup fitur Create, Read, Update, dan Delete (CRUD) melalui implementasi file add_task.php, edit_task.php, delete_task.php, dan update_status.php untuk pengelolaan data tugas, serta penyusunan dan pembaruan dokumentasi proyek pada file README.md.         |
 | 3  | Ni Ketut Mandarini Xioshin | 240030038  | mandarinixioshin       | Berperan dalam pembuatan konfigurasi (config) sistem, pengelolaan database, pembaruan pada halaman dashboard, serta pembaruan dokumentasi pada README.md.                                                   |
 | 4  | Kadek Hana Dwi Lestari     | 240020043  | hanadwlle              | Mengembangkan fitur login dan register pengguna, Mengelola session autentikasi menggunakan PHP, Menambahkan validasi input dan keamanan password, Mengimplementasikan fitur logout pengguna          
 
@@ -90,6 +90,7 @@ README.md          # Dokumentasi project
 - Setiap halaman manajemen tugas hanya dapat diakses setelah login  
 - Sistem menggunakan **session PHP** untuk autentikasi  
 - Jika session tidak ditemukan, pengguna akan diarahkan ke halaman login
+
 
 
 
